@@ -1,0 +1,9 @@
+project: savantenvs/libcoap
+target: async_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/async_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/async_fuzzer
+    libfuzzer: true
+    timeout: 5

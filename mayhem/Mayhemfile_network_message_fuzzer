@@ -1,0 +1,8 @@
+project: savantenvs/libcoap
+target: network_message_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/network_message_fuzzer
+    libfuzzer: true
+    timeout: 5

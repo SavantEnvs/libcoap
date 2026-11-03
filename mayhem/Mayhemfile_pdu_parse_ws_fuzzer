@@ -1,0 +1,8 @@
+project: savantenvs/libcoap
+target: pdu_parse_ws_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/pdu_parse_ws_fuzzer
+    libfuzzer: true
+    timeout: 5

@@ -1,0 +1,8 @@
+project: savantenvs/libcoap
+target: cache_key_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/cache_key_fuzzer
+    libfuzzer: true
+    timeout: 5

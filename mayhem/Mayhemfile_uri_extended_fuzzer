@@ -1,0 +1,8 @@
+project: savantenvs/libcoap
+target: uri_extended_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/uri_extended_fuzzer
+    libfuzzer: true
+    timeout: 5

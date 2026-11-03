@@ -1,0 +1,9 @@
+project: savantenvs/libcoap
+target: block_check_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/block_check_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/block_check_fuzzer
+    libfuzzer: true
+    timeout: 5
